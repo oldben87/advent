@@ -65,6 +65,52 @@ while ( i < 589999 ) {
 
 		i++
 }
-console.log(pmatch.length)
-console.log(pmatch[pmatch.length - 1])
+
+let matches = 0;
+pmatch.map((mtch) => {
+
+  let matchNum = []
+ // if true true false true true, if array = 1 then valid and add, if array is 
+  let i1 = parseInt(mtch.toString().charAt(0))
+    let i2 = parseInt(mtch.toString().charAt(1))
+    let i3 = parseInt(mtch.toString().charAt(2))
+    let i4 = parseInt(mtch.toString().charAt(3))
+    let i5 = parseInt(mtch.toString().charAt(4))
+    let i6 = parseInt(mtch.toString().charAt(5))
+
+    if (i1 === i2) {
+        matchNum.push(true)
+    } else {
+      matchNum.push(false)
+    }
+    if (i2===i3) {
+      matchNum.push(true)
+    }else {
+      matchNum.push(false)
+    }
+      
+    if (i3===i4) {
+      matchNum.push(true)
+    } else {
+      matchNum.push(false)
+    }
+    
+    if ( i4===i5 ) {
+        matchNum.push(true)
+    } else {
+      matchNum.push(false)
+    }
+    if ( i5===i6) {
+        matchNum.push(true)
+    } else {
+      matchNum.push(false)
+    }
+
+    matches++;
+
+    
+
+})
+
+console.log(matches)
 
