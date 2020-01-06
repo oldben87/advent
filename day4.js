@@ -70,7 +70,7 @@ let matches = 0;
 pmatch.map((mtch) => {
 
   let matchNum = []
- // if true true false true true, if array = 1 then valid and add, if array is 
+
   let i1 = parseInt(mtch.toString().charAt(0))
     let i2 = parseInt(mtch.toString().charAt(1))
     let i3 = parseInt(mtch.toString().charAt(2))
