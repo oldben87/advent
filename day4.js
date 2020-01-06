@@ -105,9 +105,29 @@ pmatch.map((mtch) => {
     } else {
       matchNum.push(false)
     }
+      
+    let matchTrue = 0;
+    let matchAdd = []
 
-    matches++;
+    matchNum.map((bool) => {
+      if (bool) {
+        matchTrue ++
+      } else {
+        matchAdd.push(matchTrue)
+        matchTrue = 0;
+      }
 
+    })
+
+    matchAdd.push(matchTrue)
+
+    function filterMatches(value){
+      return value === 1
+    }
+    const result = matchAdd.filter(filterMatches);
+    if (result != 0){
+      matches++;
+    }
     
 
 })
