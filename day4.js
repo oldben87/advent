@@ -68,31 +68,3 @@ while ( i < 589999 ) {
 console.log(pmatch.length)
 console.log(pmatch[pmatch.length - 1])
 
-
-/*
-if (i == 500000) {
-    date2 = new Date();
-
-     if (date2 < date1) {
-        date2.setDate(date2.getDate() + 1);
-    }
-    
-    var diff = date2 - date1;
-
-    var msec = diff;
-    var hh = Math.floor(msec / 1000 / 60 / 60);
-    msec -= hh * 1000 * 60 * 60;
-    var mm = Math.floor(msec / 1000 / 60);
-    msec -= mm * 1000 * 60;
-    var ss = Math.floor(msec / 1000);
-    msec -= ss * 1000;
-    
-
-
-console.log('Hours: ' + hh + ' Mins: '+ mm + ' Secs: ' + ss);
-console.log(pmatch);
-
-
-}
-
-*/
